@@ -1,0 +1,15 @@
+---
+applications:
+- name: roster
+  memory: 1G
+  path: roster.jar
+  instances: 1
+  buildpack: java_buildpack
+  services:
+  - my-db1 
+  - my-logs
+  env:
+    APP_VERSION: blue
+    ROSTER_A: west
+    ROSTER_B: east
+    ROSTER_C: north
